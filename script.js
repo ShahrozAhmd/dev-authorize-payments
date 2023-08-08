@@ -1,7 +1,7 @@
 var formToken
 
 const apiUrl =
-  "https://api.leapcart.com/v1/payment-terminal/payment-transaction"
+  "https://test-leapcart.kodefuse.com/v1/payment-terminal/payment-transaction"
 
 function getToken() {
   const postData = {
@@ -120,7 +120,7 @@ AuthorizeNetPopup.onReceiveCommunication = function (querystr) {
       window.parent.document.getElementById("amount").value = ""
       window.parent.document.getElementById("invoice").value = ""
       window.parent.document.location.assign(
-        "https://authorize-payments.vercel.app"
+        "https://dev-authorize-payments.vercel.app"
       )
 
       AuthorizeNetPopup.closePopup()
