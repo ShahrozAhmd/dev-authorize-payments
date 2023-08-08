@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issues</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container d-flex align-items-center justify-content-center vh-100">
+        <div class="text-center">
+            <h1 class="text-danger">Failure</h1>
+            <button class="btn btn-primary btn-lg mt-4" onclick="handleCloseModal()">Try Another Transaction</button>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS (optional) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+
+        function handleCloseModal() {
+            window.parent.document.getElementById("divAuthorizeNetPopup").style.display = "none"
+            window.parent.document.getElementById("email").value = "";
+            window.parent.document.getElementById("amount").value = "";
+            window.parent.document.getElementById("invoice").value = "";
+            window.parent.document.location.assign("https://authorize-payments.vercel.app")
+
+        }
+
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

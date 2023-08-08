@@ -1,0 +1,33 @@
+"hostedPaymentSettings": {
+    "setting": [{
+      "settingName": "hostedPaymentReturnOptions",
+      "settingValue": "{\"showReceipt\": true, \"url\": \"https://authorize-payments.vercel.app/success_receipt.html\", \"urlText\": \"Continue\", \"cancelUrl\": \"https://authorize-payments.vercel.app/cancel_payment.html\", \"cancelUrlText\": \"Cancel\"}"
+    }, {
+      "settingName": "hostedPaymentButtonOptions",
+      "settingValue": "{\"text\": \"Pay\"}"
+    }, {
+      "settingName": "hostedPaymentStyleOptions",
+      "settingValue": "{\"bgColor\": \"blue\"}"
+    }, {
+      "settingName": "hostedPaymentPaymentOptions",
+      "settingValue": "{\"cardCodeRequired\": false, \"showCreditCard\": true, \"showBankAccount\": false}"
+    }, {
+      "settingName": "hostedPaymentSecurityOptions",
+      "settingValue": "{\"captcha\": false}"
+    }, {
+      "settingName": "hostedPaymentShippingAddressOptions",
+      "settingValue": "{\"show\": false, \"required\": false}"
+    }, {
+      "settingName": "hostedPaymentBillingAddressOptions",
+      "settingValue": "{\"show\": false, \"required\": false}"
+    }, {
+      "settingName": "hostedPaymentCustomerOptions",
+      "settingValue": "{\"showEmail\": false, \"requiredEmail\": false, \"addPaymentProfile\": false}"
+    }, {
+      "settingName": "hostedPaymentOrderOptions",
+      "settingValue": "{\"show\": false, \"merchantName\": \"Leapcart\"}"
+    }, {
+      "settingName": "hostedPaymentIFrameCommunicatorUrl",
+      "settingValue": "{\"url\": \"https://authorize-payments.vercel.app/connection.html\"}"
+    }]
+  }
